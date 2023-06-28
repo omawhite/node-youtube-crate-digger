@@ -2,7 +2,9 @@
 
 This is a small utility script I built around the youtube-dl ffmpeg programs to make it easier for me to download videos from my crate digging playlist. I find a lot of good stuff on youtube but manually copying urls one by one into various youtube to mp3 sites got to be a pain. So I built this.
 
-## Pre-requists
+Please keep in mind I wrote this in an afternoon so don't expect perfection, if you want to add features feel free to fork or put up a pull request.
+
+## Pre-requisites
 
 1. In order for this script to work you need to have [youtube-dl](https://github.com/ytdl-org/youtube-dl) and [ffmpeg](https://www.ffmpeg.org/) installed on your machine, or run this inside a docker container with those packages installed.
 2. You need to either have nodejs installed on your machine or have docker installed if you want to run the docker container.
