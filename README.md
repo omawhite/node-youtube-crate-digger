@@ -6,6 +6,9 @@
 2. setup your batchFile
 3. ....profit
 
+## Instructions
+
 ## notes
 
 got my docker image from here: <https://hub.docker.com/r/nikolaik/python-nodejs/tags>
+utility this is based on <https://github.com/ytdl-org/youtube-dl>
