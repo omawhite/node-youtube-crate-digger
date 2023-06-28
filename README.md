@@ -12,9 +12,17 @@ This is a small utility script I built around the youtube-dl ffmpeg programs to 
 1. create an file called download-archive.txt, this file is how the script keeps track of what videos you've downloaded before
 2. duplicate batchFile.example.txt and rename the duplicated file to batchFile.txt.
 3. Place the url(s) of the video(s) or playlist(s) you want to download on seperate lines inside of batchFile.txt
-4. Run the program:
+4. Run the program
+
    with nodejs: `npm run build`
+
    with docker: `docker compose up --build`
+
+   The program will then place all downloaded files inside of a downloads directory next to where the script is executed.
+
+### Dry runs
+
+If you want to test the script without actually downloading anything you can add the `DRY_RUN` env variable before executing: `DRY_RUN=true npm run build`
 
 ## notes
 

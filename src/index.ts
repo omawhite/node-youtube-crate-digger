@@ -3,8 +3,9 @@ import { spawn } from 'child_process';
 console.log('lets dig some crates!');
 
 console.log('setting things up');
-const isProduction = process.env.NODE_ENV === 'production';
-console.log(`isProduction:`, isProduction);
+
+const isDryRun = process.env.DRY_RUN === 'true';
+console.log(`isDryRun:`);
 const batchFileLocation = 'batchFile.txt';
 const args = [
   '--download-archive',
@@ -19,7 +20,7 @@ const args = [
   batchFileLocation
 ];
 //if we are in production just dry run it
-if (!isProduction) {
+if (isDryRun) {
   args.push('--simulate');
 }
 console.log('spawning download process');
