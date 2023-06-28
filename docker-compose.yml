@@ -1,0 +1,12 @@
+version: '3'
+services:
+  youtube-crate-digger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./downloads:/app/downloads
+      - ./batchFile.txt:/app/batchFile.txt
+      - ./download-archive.txt:/app/download-archive.txt
